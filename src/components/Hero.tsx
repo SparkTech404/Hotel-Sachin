@@ -78,7 +78,7 @@ const Hero: React.FC = () => {
       y: 0,
       opacity: 1,
       filter: 'blur(0px)',
-      transition: { duration: 1, ease: [0.25, 0.46, 0.45, 0.94] }
+      transition: { duration: 1, ease: [0.25, 0.46, 0.45, 0.94] as const }
     }
   };
 
