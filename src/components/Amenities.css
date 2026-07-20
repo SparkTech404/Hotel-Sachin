@@ -1,0 +1,60 @@
+.amenities-section {
+  position: relative;
+  background-color: var(--bg-secondary);
+}
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.amenities-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.amenity-card {
+  padding: 25px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  cursor: default;
+}
+
+.amenity-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.amenity-icon {
+  margin-bottom: 15px;
+}
+
+.amenity-card h3 {
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--text-primary);
+}
+
+.amenity-card p {
+  font-size: 0.9rem;
+}
+
+.amenity-side-image {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 1024px) {
+  .amenities-grid {
+    grid-template-columns: 1fr;
+  }
+  .amenity-side-image {
+    height: 400px;
+  }
+}
